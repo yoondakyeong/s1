@@ -1,0 +1,387 @@
+/*스투스뜨*/
+*{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	text-decoration: none;
+}
+#indexone{
+	background: #1d2760;
+}
+#indextwo{
+	background: #1d2760;
+}
+#index-game-one{
+	background: #c61c4d;
+}
+#index-game-two{
+	background: #e8bd0a;
+}
+#index-game-three{
+	background: #24aa90;
+}
+
+#qicon{
+	cursor: pointer;
+}
+.full-backgorund{
+	position: absolute;
+	height: 100%;
+	z-index: 10;
+	animation: back 2s forwards;
+	/*animation-delay: 1.3s;*/
+	visibility: visible;
+}
+@keyframes back {
+  from{opacity: 1;}
+  to{opacity: 0.0; visibility: hidden;}
+}
+
+.head-left-icons{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+.head-right-icons{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.pageboxes{
+	position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 650px;
+    width: 1155px;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-sizing: content-box;
+}
+
+/*아이콘(상단) 이미지*/
+.icon-tops{
+	height: 80px;
+}
+.icon-tops:hover{
+	opacity: 0.8;
+}
+
+
+/* 메이이이이인 페이지 --- 메이이이인 */
+#indexx{
+	position: absolute;
+	background-image: url(./main/img1/background-index.png);
+    background-size: cover;
+}
+
+.section-index-start{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 53%;
+	left: 50%;
+	height: 30px;
+	display: none;
+}
+.section-index-star{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 50%;
+	height: 60px;
+}
+#star-icon{
+	background: pink;
+	height: 100px;
+	width: 100px;
+}
+.section-index-star-shine{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 50%;
+	height: 240px;
+	z-index: -1;
+	animation: ro 1s infinite linear alternate;
+}
+
+@keyframes ro {
+  from{opacity: 1;}to{opacity: 0.4;}}
+
+
+
+ /*캐릭터,,, 그림자자자자*/
+.section-index-ju-shadow{
+	width: 10%;
+	position: absolute;
+	bottom: 35px;
+	left: 5%;
+}
+.section-index-pa-shadow{
+	width: 9%;
+	position: absolute;
+	bottom: 25px;
+	left: 15%;
+}
+.section-index-th-one-shadow{
+	width: 6%;
+	position: absolute;
+	right: 19%;
+	bottom: 40px;
+}
+.section-index-th-two-shadow{
+	width: 6%;
+	position: absolute;
+	right: 12%;
+	bottom: 45px;
+}
+.section-index-th-three-shadow{
+	width: 6%;
+	position: absolute;
+	right: 5%;
+	bottom: 40px;
+}
+#star-icon:hover + .section-index-start{
+	display: block;
+}
+
+.section-index-game:hover{
+	opacity: 0.8;
+}
+     /*게임클리리이잉*/
+#games .gamess1{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 39%;
+}
+#games .gamess2{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 50%;
+}
+#games .gamess3{
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 40%;
+	left: 61%;
+}
+
+.gamess1:hover + .section-index-th-text{
+	display: block;
+}
+.gamess2:hover + .section-index-pa-text{
+	display: block;
+}
+.gamess3:hover + .section-index-ju-text{
+	display: block;
+}
+
+.section-index-game{
+	width: 120px;
+}
+
+		/*인덱스투투투투투투우-텍스트,ㅇㅇ,응*/
+.section-index-ju-text{
+	position: absolute;
+	width: 175px;
+	bottom: 35%;
+	left: 4%;
+	display: none;
+}
+.section-index-pa-text{
+	position: absolute;
+	width: 175px;
+	bottom: 18%;
+	left: 14%;
+	display: none;
+}
+.section-index-th-text{
+	position: absolute;
+	width: 175px;
+	bottom: 19%;
+	right: 7%;
+	opacity: 1;
+	display: none;
+}
+
+.q-wrap{
+	width: 50%;
+    height: 38%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    z-index: 1;
+}
+.indextwo-q{
+	width: 100%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+.indextwo-q-x{
+	height: 55px;
+	position: absolute;
+	top: 7%;
+	right: 4.5%;
+	cursor: pointer;
+}
+.indextwo-q-x:hover{
+	opacity: 0.8;
+}
+/* 게임111 페이지 --- 숫자세기 */
+#pageone{
+	position: absolute;
+	background-image: url(./game1/background-one.png);
+    background-size: cover;
+}
+
+#game-one-bottom{
+	position: absolute;
+	bottom: 0;
+	border-top: solid 5px white;
+	height: 100px;
+	width: 100%;
+	background: #cfd1b0;
+}
+.icon-bottom-left{
+	position: absolute;
+	transform: translate(0%,-50%);
+	left: 10px;
+	top: 50%;
+	height: 80px;
+}
+.icon-bottom-right{
+	position: absolute;
+	transform: translate(0%,-50%);
+	right: 10px;
+	top: 50%;
+	height: 80px;
+}
+.gameone-one-th{
+	position: absolute;
+	transform: translate(0%,-50%);
+	right: 5%;
+	top: 66%;
+	width: 60px;
+}
+.gameone-two-th{
+	position: absolute;
+	transform: translate(0%,-50%);
+	right: 15%;
+	top: 75%;
+	width: 60px;
+}
+.gameone-three-th{
+	position: absolute;
+	transform: translate(0%,-50%);
+	left: 5%;
+	top: 65%;
+	width: 60px;
+}
+.gameone-text{
+	position: absolute;
+	transform: translate(0%,-50%);
+	right: 4.5%;
+	top: 57%;
+	width: 60px;
+}
+.gameone-textes{
+	position: absolute;
+	transform: translate(0%,-50%);
+	right: 2%;
+	top: 54%;
+	width: 120px;
+}
+
+/* 게임2222 페이지 --- 계산 */
+#pagetwo{
+	position: absolute;
+	background-image: url(./game2/background-two.png);
+    background-size: cover;
+}
+#gametwo-wrap{
+	height: 230px;
+    width: 600px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 42%;
+    left: 50%;
+}
+.gametwo-box{
+	position: relative;
+	width: 100%;
+}
+.gametwo-pa{
+	position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 9%;
+}
+.gametwo-text{
+	position: absolute;
+    bottom: 26%;
+    left: 6.5%;
+    width: 60px;
+    cursor: pointer;
+}
+.gametwo-textes{
+	position: absolute;
+    bottom: 26%;
+    left: 3%;
+    width: 150px;
+   	visibility: hidden;
+   	cursor: pointer;
+}
+
+
+/* 게임33333 페이지 --- 그림그림 */
+#pagethree{
+	position: absolute;
+	background-image: url(./game3/background-three.png);
+    background-size: cover;
+}
+#gamethree-wrap{
+	position: absolute;
+    transform: translate(-50%, -50%);
+    top: 51%;
+    left: 50%;
+    width: 42%;
+}
+.gamethree-box{
+	position: relative;
+    width: 100%;
+}
+.gamethree-ju{
+	position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 10%;
+}
+.gamethree-ju-n{
+	position: absolute;
+    bottom: 10%;
+    left: 5%;
+    width: 10%;
+    visibility: hidden;
+}
+.gamethree-text{
+	position: absolute;
+    bottom: 40%;
+    left: 7.5%;
+    width: 60px;
+    visibility: visible;
+    cursor: pointer;
+}
+.gamethree-textes{
+	position: absolute;
+    bottom: 40%;
+    left: 3.5%;
+    width: 150px;
+    visibility: hidden;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>계산하기-스투스뜨</title>
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body id="index-game-two">
+	<div id="pagetwo" class="pageboxes">
+		<head>
+			<div class="head-left-icons">
+				<a href="./indextwo.html">
+					<img class="icon-tops" src="./game1/icon-top-left.png">
+				</a>
+			</div>
+			<div class="head-right-icons">
+				<a href="">
+					<img class="icon-tops" src="./game2/icon-top-right-one.png">
+				</a>
+				<a href="">
+					<img class="icon-tops" src="./game2/icon-top-right-two.png">
+				</a>
+				<a href="">
+					<img class="icon-tops" src="./game2/icon-top-right-three.png">
+				</a>
+			</div>
+		</head>
+
+		<div id="gametwo-wrap">
+			<img class="gametwo-box" src="./game2/boximg.png">
+		</div>
+
+		<div>
+			<img class="gametwo-pa" src="./game2/pa.png">
+			<img class="gametwo-text" id="gametwot" src="./game2/img-text.png">
+			<img class="gametwo-textes" id="gametwotes" src="./game2/img-textes.png">
+		</div>
+		<script type="text/javascript">
+			gametwot.onclick=function(){
+				gametwot.style.visibility='hidden';
+				gametwotes.style.visibility='visible';
+			}
+			gametwotes.onclick=function(){
+				gametwot.style.visibility='visible';
+				gametwotes.style.visibility='hidden';
+			}
+
+		</script>
+	</div>
+</body>
+</html>
